@@ -10,6 +10,9 @@ import { RecipesComponent } from './recipes/recipes.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    RecipesComponent
   ]
 })
 export class RecipesModule { }

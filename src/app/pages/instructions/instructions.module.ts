@@ -10,6 +10,9 @@ import { InstructionsComponent } from './instructions/instructions.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    InstructionsComponent
   ]
 })
 export class InstructionsModule { }
