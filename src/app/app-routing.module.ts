@@ -4,6 +4,9 @@ import { LandingComponent } from './pages/landing/landing/landing.component';
 import { RouterModule, Routes } from '@angular/router';
 import { InstructionsComponent } from './pages/instructions/instructions/instructions.component';
 import { RecipesComponent } from './pages/recipes/recipes/recipes.component';
+import { LandingModule } from './pages/landing/landing.module';
+import { RecipesModule } from './pages/recipes/recipes.module';
+import { InstructionsModule } from './pages/instructions/instructions.module';
 
 const routes: Routes = [
   { path: '', component: LandingComponent },
@@ -16,7 +19,10 @@ const routes: Routes = [
   declarations: [],
   imports: [
     RouterModule.forRoot(routes),
-    CommonModule
+    CommonModule,
+    LandingModule,
+    RecipesModule,
+    InstructionsModule
   ],
   exports: [RouterModule]
 })
