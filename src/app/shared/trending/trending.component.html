@@ -1,0 +1,8 @@
+<app-layout-template>
+    <div class="trending">
+        <h1>Trending</h1>
+        <div class="trending-container">
+                <app-recipe-card  *ngFor="let recipe of trendingRecipes" [title]="recipe.title"  [recipeImage]="recipe.recipeImage" [ease]="recipe.ease" [time]="recipe.time"></app-recipe-card>
+        </div>
+    </div>
+</app-layout-template>
