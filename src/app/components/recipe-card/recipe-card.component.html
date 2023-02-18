@@ -1,0 +1,14 @@
+<div class="recipe-card">
+    <div class="image-container">
+        <img src="../../assets/background/{{recipeImage}}.png" alt="{{ title }}">
+    </div>
+    <h3 class="title">{{ title }}</h3>
+    <div class="info-area">
+        <div class="favourite-indicator">
+           <span [ngClass]="{'easy': ease >= 1}"><fa-icon [icon]="faCookieBite"></fa-icon></span>
+           <span [ngClass]="{'easy': ease >= 2}"><fa-icon [icon]="faCookieBite"></fa-icon></span>
+           <span [ngClass]="{'easy': ease >= 3}"><fa-icon [icon]="faCookieBite"></fa-icon></span>
+        </div>
+        <div>120-140min</div>
+    </div>
+</div>
