@@ -1,7 +1,8 @@
-.trending {
+.recipe-blog {
+    background: url(../../../assets/background/blogbg.png) center center  no-repeat;
+    background-size: cover;
+    height: 700px;
     padding-top: 20px;
-    padding-bottom: 20px;
-
     h1 {
         font-family: Open-sans;
         font-style: normal;
@@ -23,12 +24,4 @@
             border-radius:2px;
         }
     }
-}
-
-.trending-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 50px;
-    justify-items: center;
-    align-items: center;
 }
