@@ -1,0 +1,72 @@
+<section class="login">
+  <div class="container">
+    <div class="img-col"></div>
+    <div class="form-col">
+      <div class="form-container">
+        <h1 class="title">Login</h1>
+        <form [formGroup]="foodForm" (ngSubmit)="onSubmit()" class="login-form">
+          <div class="email">
+            <label>Email</label>
+            <input
+              class="login-input"
+              type="text"
+              formControlName="email"
+              placeholder="Email Adress"
+            />
+            <span
+              *ngIf="(foodForm.controls['email'].touched || foodForm.controls['email'].dirty) && foodForm.controls['email'].errors?.['required']"
+              class="err-message"
+            >
+              Email required
+            </span>
+
+            <span
+              *ngIf="(foodForm.controls['email'].touched || foodForm.controls['email'].dirty) && foodForm.controls['email'].errors?.['email']"
+              class="err-message"
+            >
+              Enter a valid email address
+            </span>
+          </div>
+
+          <div class="password">
+            <label>Password</label>
+            <input
+              class="login-input"
+              type="password"
+              formControlName="password"
+              placeholder="Password"
+            />
+            <span
+              *ngIf="(foodForm.controls['password'].touched || foodForm.controls['password'].dirty) && foodForm.controls['password'].errors?.['required']"
+              class="err-message"
+            >
+              This field is required
+            </span>
+
+            <span
+              *ngIf="(foodForm.controls['password'].touched || foodForm.controls['password'].dirty) && foodForm.controls['password'].errors?.['minlength']"
+              class="err-message"
+            >
+              Password must be a least 5 characters
+            </span>
+          </div>
+          <div class="btn">
+            <button
+              type="submit"
+              [ngClass]="foodForm.invalid || foodForm.pristine ? 'isDisabled' : 'login-btn'">
+              Login
+            </button>
+          </div>
+        </form>
+        <div class="login-options">
+          <p>Or Login With:</p>
+          <div class="icons">
+            <img class="icon" src="../assets/icons/facebook.png" />
+            <img class="icon" src="../assets/icons/twitter.png" />
+            <img class="icon" src="../assets/icons/google.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
