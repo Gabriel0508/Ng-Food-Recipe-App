@@ -53,10 +53,7 @@
           <div class="btn">
             <button
               type="submit"
-              class="login-btn"
-              [ngClass]="foodForm.invalid || foodForm.pristine ? 'isDisabled' : 'login-btn'"
-              [disabled]="foodForm.invalid || foodForm.pristine"
-            >
+              [ngClass]="foodForm.invalid || foodForm.pristine ? 'isDisabled' : 'login-btn'">
               Login
             </button>
           </div>
