@@ -44,7 +44,7 @@
             </span>
 
             <span
-              *ngIf="(foodForm.controls['password'].touched || foodForm.controls['password'].dirty) && foodForm.controls['password'].errors?.['minLength']"
+              *ngIf="(foodForm.controls['password'].touched || foodForm.controls['password'].dirty) && foodForm.controls['password'].errors?.['minlength']"
               class="err-message"
             >
               Password must be a least 5 characters
