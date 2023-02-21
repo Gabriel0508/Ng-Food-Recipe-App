@@ -9,11 +9,13 @@ import { RecipesModule } from './pages/recipes/recipes.module';
 import { InstructionsModule } from './pages/instructions/instructions.module';
 import { ComponentsModule } from './components/components.module';
 import { LoginModule } from './pages/food-login/login.module';
+import { LoginComponent } from './pages/food-login/login/login.component';
 
 const routes: Routes = [
   { path: '', component: LandingComponent },
   { path: 'recipes', component: RecipesComponent },
-  { path: 'instructions', component: InstructionsComponent }
+  { path: 'instructions', component: InstructionsComponent },
+  { path: 'login', component: LoginComponent }
 ];
 
 
