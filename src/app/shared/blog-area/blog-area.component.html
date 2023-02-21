@@ -1,0 +1,25 @@
+<div class="blog-area-component">
+    <app-layout-template>
+        <h1>Recipe Blog</h1>
+        <section class="articles-container">
+            <div class="lates-article">
+                <app-large-article-blog></app-large-article-blog>
+            </div>
+            <div class="list-of-articles">
+                <div class="articles-wrapper">
+
+                    <app-small-article-blog *ngFor="let article of articles" 
+                    [title]="article.title"
+                    [imageLink]="article.imageLink"
+                    [date]="article.date"
+                    [excerpt]="article.excerpt"
+                    ></app-small-article-blog>
+
+                </div>
+                <div class="view-more-area">
+                    <button class="btn btn-primary" (click)="goToArticlesPage()">View More</button>
+                </div>
+            </div>
+        </section>
+    </app-layout-template>
+</div>
