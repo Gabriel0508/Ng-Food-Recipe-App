@@ -1,0 +1,28 @@
+.image-container {
+    max-width: 575px;
+    height: auto;
+    margin-bottom: 20px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.article-date {
+    font-family: Open-sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #5D5D5D;
+}
+
+.article-title {
+    font-family: Open-sans;
+    font-style: normal;
+    font-weight: 600;
+    color: #2F2F2F;
+    margin-bottom: 10px;
+}

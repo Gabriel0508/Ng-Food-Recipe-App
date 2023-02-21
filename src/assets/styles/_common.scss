@@ -10,3 +10,23 @@
   box-sizing: border-box;
   font-family: Open-Sans;
 }
+
+.btn-primary {
+  border: 1px solid #CA3C0A;
+  background: #CA3C0A;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.btn-secondary {
+  border: 1px solid #CA3C0A;
+  background: white;
+  color: #CA3C0A;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}

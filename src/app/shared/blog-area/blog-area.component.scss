@@ -1,0 +1,50 @@
+.blog-area-component {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: url(../../../assets/background/blogbg.png) center center no-repeat;
+    background-size: cover;
+
+    h1 {
+        font-family: Open-sans;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 44px;
+        position: relative;
+        
+        &:before {
+            content: '';
+            display: block;
+            width: 45px;
+            height: 3px;
+            background: #1D741B;
+            position: absolute;
+            bottom: 0;
+            left: 5px;
+            border-radius:2px;
+        }
+    }
+
+    .articles-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 50px;
+        margin-top: 20px;
+    }
+
+    .list-of-articles {
+        display: grid;
+        grid-template-columns: 1fr 100px;
+        gap: 20px;
+    }
+
+    .view-more-area {
+        position: relative;
+
+        button {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+    }
+}
