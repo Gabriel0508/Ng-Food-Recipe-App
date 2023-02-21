@@ -8,7 +8,6 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class LoginComponent implements OnInit {
   foodForm: FormGroup = new FormGroup({});
-  submitted: boolean = false;
 
   constructor(private fb: FormBuilder) {}
 
@@ -27,8 +26,6 @@ export class LoginComponent implements OnInit {
    * Method to submit
    */
   onSubmit() {
-    this.submitted = true;
-
     if (this.foodForm.invalid) {
       return;
     }

@@ -8,7 +8,8 @@ import { LandingModule } from './pages/landing/landing.module';
 import { RecipesModule } from './pages/recipes/recipes.module';
 import { InstructionsModule } from './pages/instructions/instructions.module';
 import { ComponentsModule } from './components/components.module';
-import { LoginComponent } from './shared/login/login.component';
+import { LoginComponent } from './pages/food-login/login/login.component';
+import { LoginModule } from './pages/food-login/login.module';
 
 const routes: Routes = [
   { path: '', component: LandingComponent },
@@ -26,7 +27,8 @@ const routes: Routes = [
     LandingModule,
     RecipesModule,
     InstructionsModule,
-    ComponentsModule
+    ComponentsModule,
+    LoginModule
   ],
   exports: [RouterModule]
 })
