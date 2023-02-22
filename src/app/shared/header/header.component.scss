@@ -11,7 +11,7 @@ nav {
     align-items: center;
 
     .brand {
-      font-family: 'Abhaya Libre', serif;
+      font-family: "Abhaya Libre", serif;
       text-decoration: none;
       font-size: 45px;
       font-weight: 100;
@@ -28,7 +28,7 @@ nav {
 
       .link-item-active {
         text-decoration: none;
-        color: #CA3C0A;
+        color: #ca3c0a;
         font-size: 1.2rem;
         font-weight: 400;
       }
@@ -39,30 +39,37 @@ nav {
         font-weight: 400;
         margin-left: 20px;
         &:hover {
-          color: #CA3C0A;
+          color: #ca3c0a;
         }
       }
     }
 
     .btn-primary {
-      border: 1px solid #CA3C0A;
-      background: #CA3C0A;
+      border: 1px solid #ca3c0a;
+      background: #ca3c0a;
       color: white;
       padding: 10px;
       border-radius: 5px;
       cursor: pointer;
       margin-right: 10px;
+      &:hover {
+        background-color: #ce653f;
+      }
     }
 
     .btn-secondary {
-      border: 1px solid #CA3C0A;
+      border: 1px solid #ca3c0a;
       background: white;
-      color: #CA3C0A;
+      color: #ca3c0a;
       padding: 10px;
       border-radius: 5px;
-      cursor: pointer;
       margin-right: 10px;
+      cursor: pointer;
+      transition: all .15s ease-in-out;
+      &:hover {
+        background-color: #ca3c0a;
+        color: white;
+      }
     }
-
   }
 }
