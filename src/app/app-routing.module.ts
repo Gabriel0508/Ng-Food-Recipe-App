@@ -11,7 +11,7 @@ import { ComponentsModule } from './components/components.module';
 import { LoginModule } from './pages/food-login/login.module';
 import { LoginComponent } from './pages/food-login/login/login.component';
 import { RegisterComponent } from './pages/register-user/register/register.component';
-import { registerModule } from './pages/register-user/register.module';
+import { RegisterModule } from './pages/register-user/register.module';
 
 const routes: Routes = [
   { path: '', component: LandingComponent },
@@ -32,7 +32,7 @@ const routes: Routes = [
     InstructionsModule,
     ComponentsModule,
     LoginModule,
-    registerModule
+    RegisterModule
   ],
   exports: [RouterModule]
 })

@@ -8,4 +8,4 @@ import { RegisterComponent } from './register/register.component';
   imports: [CommonModule, ReactiveFormsModule],
   exports: [RegisterComponent]
 })
-export class registerModule {}
+export class RegisterModule {}
