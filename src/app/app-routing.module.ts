@@ -10,11 +10,13 @@ import { InstructionsModule } from './pages/instructions/instructions.module';
 import { ComponentsModule } from './components/components.module';
 import { LoginModule } from './pages/food-login/login.module';
 import { LoginComponent } from './pages/food-login/login/login.component';
+import { RegisterComponent } from './pages/register-user/register/register.component';
 
 const routes: Routes = [
   { path: '', component: LandingComponent },
   { path: 'recipes', component: RecipesComponent },
   { path: 'instructions', component: InstructionsComponent },
+  { path: 'register', component: RegisterComponent },
   { path: 'login', component: LoginComponent }
 ];
 
@@ -28,7 +30,8 @@ const routes: Routes = [
     RecipesModule,
     InstructionsModule,
     ComponentsModule,
-    LoginModule
+    LoginModule,
+    RecipesModule
   ],
   exports: [RouterModule]
 })
