@@ -10,10 +10,9 @@
     width: 90%;
     margin: 2rem auto;
     border-radius: 15px;
-    background-image: url(/assets/background/herobg1.png);
-    background-position: center;
+    background: url(/assets/background/loginbg.png) center center no-repeat;
     background-size: cover;
-    background-repeat: no-repeat;
+
     .form-col {
       border-radius: 0 15px 15px 0;
       background-color: white;
