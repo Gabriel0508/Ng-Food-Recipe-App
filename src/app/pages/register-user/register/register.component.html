@@ -1,0 +1,78 @@
+<section class="register">
+  <div class="register-container">
+    <div class="col-img"></div>
+    <div class="col-form">
+      <div class="form-container">
+        <h1 class="title">Register</h1>
+        <form [formGroup]="userForm" (ngSubmit)="onSubmit()" class="user-form">
+          <div class="name">
+            <label>First Name</label>
+            <input
+              class="name-input"
+              type="text"
+              formControlName="firstName"
+              placeholder="First Name"
+            />
+            <span class="err-message" *ngIf="errorMessages.firstNameMessages">
+              {{ errorMessages.firstNameMessages }}
+            </span>
+          </div>
+          <div class="name">
+            <label>Last Name</label>
+            <input
+              class="name-input"
+              type="text"
+              formControlName="lastName"
+              placeholder="Last Name"
+            />
+            <span class="err-message" *ngIf="errorMessages.lastNameMessages">
+              {{ errorMessages.lastNameMessages }}
+            </span>
+          </div>
+          <div class="email">
+            <label>Email</label>
+            <input
+              class="email-input"
+              type="text"
+              formControlName="email"
+              placeholder="Email"
+            />
+            <span class="err-message" *ngIf="errorMessages.emailMessages">
+              {{ errorMessages.emailMessages }}
+            </span>
+          </div>
+          <div class="password">
+            <label>Password</label>
+            <input
+              class="password-input"
+              type="password"
+              formControlName="password"
+              placeholder="Password"
+            />
+            <span class="err-message" *ngIf="errorMessages.passwordMessages">
+              {{ errorMessages.passwordMessages }}
+            </span>
+          </div>
+          <div class="terms-conditions">
+            <input type="checkbox" formControlName="conditions" />
+            <label>Accept Terms & Conditions</label>
+          </div>
+          <div class="buttons">
+            <button
+              type="submit"
+              [ngClass]="userForm.invalid || userForm.pristine ? 'isDisabled' : 'btn-primary'">
+              Register
+            </button>
+            <button
+              type="button"
+              class="btn-secondary"
+              (click)="onNavigateTo()"
+            >
+              Cancel
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

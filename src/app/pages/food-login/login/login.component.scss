@@ -65,23 +65,23 @@
             display: flex;
             flex-direction: row-reverse;
             .login-btn {
-              border: 1px solid #ca3c0a;
-              background-color: #ca3c0a;
+              border: 1px solid #CA3C0A;
+              background: #CA3C0A;
               color: white;
-              padding: 0.7rem 1.5rem;
-              border-radius: 15px;
+              padding: 10px;
+              border-radius: 5px;
               cursor: pointer;
               &:hover {
                 background-color: #ce653f;
               }
             }
             .isDisabled {
-              cursor: not-allowed;
-              background-color: #ce653f;
               border: 1px solid #ce653f;
+              background: #ce653f;
               color: white;
-              padding: 0.7rem 1.5rem;
-              border-radius: 15px;
+              padding: 10px;
+              border-radius: 5px;
+              cursor:not-allowed;
             }
           }
         }
