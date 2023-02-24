@@ -11,6 +11,22 @@
   font-family: Open-Sans;
 }
 
+/*Scrollbar width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/*Scrollbar Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/*Scrollbar Handle */
+::-webkit-scrollbar-thumb {
+  background: #CA3C0A;
+  border-radius: 15px;
+}
+
 .btn-primary {
   border: 1px solid #CA3C0A;
   background: #CA3C0A;

@@ -1,0 +1,34 @@
+<app-layout-template>
+  <nav>
+    <div class="nav-container">
+      <div class="search-header">
+        <div>
+          <a href="/" class="brand">CuisineCrafter</a>
+        </div>
+        <form [formGroup]="recipeSearchForm" (ngSubmit)="onSubmit()">
+          <div class="icon-search" type="submit">
+            <fa-icon [icon]="faSearch"></fa-icon>
+          </div>
+          <input class="recipe-search" type="text" formControlName="recipe" />
+          <div class="icon-list"><fa-icon [icon]="faList"></fa-icon></div>
+
+          <!-- <span
+            *ngIf="(recipeSearchForm.controls['email'].touched || recipeSearchForm.controls['email'].dirty) && recipeSearchForm.controls['email'].errors?.['required']"
+            class="err-message"
+          >
+
+          </span> -->
+        </form>
+        <div class="recipes-saved">
+          <span class="favorites" (click)="onShowModal()">Favorites</span>
+          <span class="cart">Cart</span>
+        </div>
+      </div>
+      <ul class="links-header">
+        <li><a href="/" class="link-item">Home</a></li>
+        <li><a href="/instructions" class="link-item">Categories</a></li>
+        <li><a href="/recipes" class="link-item">Recipes</a></li>
+      </ul>
+    </div>
+  </nav>
+</app-layout-template>

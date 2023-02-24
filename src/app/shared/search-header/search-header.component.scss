@@ -1,0 +1,93 @@
+nav {
+  width: 100%;
+  height: 180px;
+  background-color: white;
+  .nav-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 180px;
+    margin: 0 auto;
+
+    .search-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: .8rem 0;
+
+      .brand {
+        font-family: "Abhaya Libre", serif;
+        text-decoration: none;
+        font-size: 45px;
+        font-weight: 100;
+        color: black;
+      }
+
+      form {
+        position: relative;
+        .recipe-search {
+          width: 500px;
+          height: 40px;
+          border: 1px solid #000000;
+          border-radius: 15px;
+          font-size: 25px;
+          padding: 0 2rem;
+        }
+        .icon-search {
+          position: absolute;
+          bottom: 7px;
+          left: 7px;
+          cursor: pointer;
+          &:hover {
+            color: #ca3c0a;
+          }
+        }
+        .icon-list {
+          position: absolute;
+          bottom: 7px;
+          right: 7px;
+          cursor: pointer;
+          &:hover {
+            color: #ca3c0a;
+          }
+        }
+      }
+
+      .recipes-saved {
+        .favorites,
+        .cart {
+          font-weight: 400;
+          font-size: 20px;
+          color: #2f2f2f;
+          cursor: pointer;
+          margin-right: 20px;
+          &:hover {
+            color: #ca3c0a;
+          }
+        }
+      }
+    }
+
+    .links-header {
+      display: flex;
+      list-style: none;
+
+      li {
+        display: inline-block;
+      }
+
+      .link-item {
+        font-family: "Abhaya Libre", serif;
+        text-decoration: none;
+        font-size: 45px;
+        font-weight: 100;
+        color: black;
+        margin-right: 20px;
+        &:hover {
+          color: #ca3c0a;
+        }
+      }
+    }
+  }
+}
