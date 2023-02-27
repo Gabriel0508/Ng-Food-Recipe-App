@@ -8,10 +8,13 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { BlogAreaComponent } from './blog-area/blog-area.component';
 import { SearchHeaderComponent } from './search-header/search-header.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { GenericModalComponent } from './generic-modal/generic-modal.component';
+import { FavoriteModalComponent } from './favorite-modal/favorite-modal.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
-  declarations: [HeaderComponent, HeroAreaComponent, TrendingComponent, BlogAreaComponent, SearchHeaderComponent],
-  imports: [CommonModule, ComponentsModule, ReactiveFormsModule, FontAwesomeModule],
-  exports: [HeaderComponent,HeroAreaComponent,TrendingComponent, BlogAreaComponent, SearchHeaderComponent],
+  declarations: [HeaderComponent, HeroAreaComponent, TrendingComponent, BlogAreaComponent, SearchHeaderComponent, GenericModalComponent, FavoriteModalComponent],
+  imports: [CommonModule, ComponentsModule, ReactiveFormsModule, FontAwesomeModule, ComponentsModule, BrowserAnimationsModule],
+  exports: [HeaderComponent,HeroAreaComponent,TrendingComponent, BlogAreaComponent, SearchHeaderComponent, FavoriteModalComponent],
 })
 export class SharedModule {}

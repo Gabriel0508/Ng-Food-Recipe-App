@@ -13,8 +13,14 @@
           <div class="icon-list"><fa-icon [icon]="faList"></fa-icon></div>
         </form>
         <div class="recipes-saved">
-          <span class="favorites" (click)="onShowModal()">Favorites</span>
-          <span class="cart">Cart</span>
+          <span class="favorites" (click)="onShowModal()">
+            <fa-icon [icon]="faHeart"></fa-icon>
+            Favorites
+          </span>
+          <span class="cart">
+            <fa-icon [icon]="faCartShopping"></fa-icon>
+            Cart
+          </span>
         </div>
       </div>
       <ul class="links-header">

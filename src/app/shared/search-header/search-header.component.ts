@@ -2,6 +2,8 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { faList } from '@fortawesome/free-solid-svg-icons';
+import { faHeart } from '@fortawesome/free-solid-svg-icons';
+import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-search-header',
@@ -11,6 +13,8 @@ import { faList } from '@fortawesome/free-solid-svg-icons';
 export class SearchHeaderComponent implements OnInit {
   faSearch = faSearch;
   faList = faList;
+  faHeart = faHeart;
+  faCartShopping = faCartShopping;
   recipeSearchForm: FormGroup = new FormGroup({});
 
   @Output() openModal = new EventEmitter<boolean>();
