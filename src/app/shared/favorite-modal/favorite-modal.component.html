@@ -1,7 +1,4 @@
 <app-generic-modal [title]="favoriteTitle" (closeModal)="onCloseModal()" @fade>
-  <ng-content select=".app-recipe-card"></ng-content>
-
-
   <app-recipe-card
     *ngFor="let recipe of favoriteRecipes"
     [title]="recipe.title"
