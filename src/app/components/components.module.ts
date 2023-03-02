@@ -5,6 +5,7 @@ import { RecipeCardComponent } from './recipe-card/recipe-card.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { LargeArticleBlogComponent } from './large-article-blog/large-article-blog.component';
 import { SmallArticleBlogComponent } from './small-article-blog/small-article-blog.component';
+import { GenericModalComponent } from './generic-modal/generic-modal.component';
 
 
 
@@ -13,7 +14,8 @@ import { SmallArticleBlogComponent } from './small-article-blog/small-article-bl
     LayoutTemplateComponent,
     RecipeCardComponent,
     LargeArticleBlogComponent,
-    SmallArticleBlogComponent
+    SmallArticleBlogComponent,
+    GenericModalComponent
   ],
   imports: [
     CommonModule,
@@ -23,7 +25,8 @@ import { SmallArticleBlogComponent } from './small-article-blog/small-article-bl
     LayoutTemplateComponent,
     RecipeCardComponent,
     LargeArticleBlogComponent,
-    SmallArticleBlogComponent
+    SmallArticleBlogComponent,
+    GenericModalComponent
   ]
 })
 export class ComponentsModule { }

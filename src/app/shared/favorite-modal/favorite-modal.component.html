@@ -1,0 +1,10 @@
+<app-generic-modal [title]="favoriteTitle" (closeModal)="onCloseModal()" @fade>
+  <app-recipe-card
+    *ngFor="let recipe of favoriteRecipes"
+    [title]="recipe.title"
+    [recipeImage]="recipe.recipeImage"
+    [ease]="recipe.ease"
+    [time]="recipe.time"
+  >
+  </app-recipe-card>
+</app-generic-modal>

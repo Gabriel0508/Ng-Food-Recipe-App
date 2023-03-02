@@ -32,7 +32,7 @@ const routes: Routes = [
     InstructionsModule,
     ComponentsModule,
     LoginModule,
-    RegisterModule
+    RegisterModule,
   ],
   exports: [RouterModule]
 })

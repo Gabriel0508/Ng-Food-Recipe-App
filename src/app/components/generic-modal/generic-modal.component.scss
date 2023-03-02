@@ -1,0 +1,78 @@
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: #e3e3e3;
+  background-color: rgba(126, 125, 125, 0.4);
+
+  .modal-container {
+    position: relative;
+    width: 57vw;
+    height: 96vh;
+    background-color: white;
+    margin: 10px auto;
+    overflow: scroll;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+
+    .modal-close {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      right: 0;
+      top: 3px;
+      border: 1px solid #ca3c0a;
+      background: #ca3c0a;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+
+      fa-icon {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+      }
+    }
+
+    .modal-header {
+      position: relative;
+      margin: 5px 65px;
+      .title {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        color: #000000;
+        padding-top: 40px;
+
+        &:before {
+          content: "";
+          display: block;
+          width: 45px;
+          height: 3px;
+          background: #1d741b;
+          position: absolute;
+          bottom: 0;
+          border-radius: 2px;
+        }
+      }
+    }
+
+    .modal-content {
+      margin: 0 65px;
+      display: inline-grid;
+      grid-template-columns:repeat(3, 1fr);
+      grid-template-rows: auto;
+      grid-gap:0 45px;
+      align-items: center;
+    }
+  }
+}

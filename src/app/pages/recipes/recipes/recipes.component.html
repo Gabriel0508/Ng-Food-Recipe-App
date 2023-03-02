@@ -1,1 +1,3 @@
-<h1>Recipes Page</h1>
+<app-search-header (openModal)="onOpenModal($event)"></app-search-header>
+
+<app-favorite-modal *ngIf="isOpen" (closeModal)="onCloseModal($event)"></app-favorite-modal>
