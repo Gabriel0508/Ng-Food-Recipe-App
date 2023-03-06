@@ -1,27 +1,5 @@
-# FoodRecipeApp
+![image](https://user-images.githubusercontent.com/65502252/223205286-30786136-8a19-4221-9fbb-20057126c4b8.png)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.4.
+![image](https://user-images.githubusercontent.com/65502252/223205490-725bfca9-af46-44a7-b308-ab9337233d53.png)
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![image](https://user-images.githubusercontent.com/65502252/223205384-f8f0d50e-ad87-445e-9c61-74643e4adcae.png)
