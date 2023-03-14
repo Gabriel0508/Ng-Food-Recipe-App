@@ -1,20 +1,24 @@
 <app-layout-template>
-<nav>
-  <div class="nav-container">
-    <div>
-      <a (click)="navigateTo('/')" class="brand">CuisineCrafter</a>
+  <nav>
+    <div class="nav-container">
+      <div>
+        <a routerLink="/" class="brand">CuisineCrafter</a>
+      </div>
+      <ul class="nav-links">
+        <li><a class="link-item-active" routerLink="/">Home</a></li>
+        <li><a class="link-item" routerLink="/instructions">Categories</a></li>
+        <li><a class="link-item" routerLink="/recipes">Recipes</a></li>
+        <li><a class="link-item">Contact</a></li>
+        <li><a class="link-item">About</a></li>
+      </ul>
+      <div>
+        <button class="btn-secondary" (click)="navigateTo('/register')">
+          Register
+        </button>
+        <button class="btn-primary" (click)="navigateTo('/login')">
+          Login
+        </button>
+      </div>
     </div>
-    <ul class="nav-links">
-      <li><a class="link-item-active" (click)="navigateTo('/')">Home</a></li>
-      <li><a class="link-item" (click)="navigateTo('/instructions')">Categories</a></li>
-      <li><a class="link-item" (click)="navigateTo('/recipes')">Recipes</a></li>
-      <li><a class="link-item">Contact</a></li>
-      <li><a class="link-item">About</a></li>
-    </ul>
-    <div>
-     <button class="btn-secondary" (click)="navigateTo('/register')">Register</button>
-     <button class="btn-primary" (click)="navigateTo('/login')">Login</button>
-    </div>
-  </div>
-</nav>
+  </nav>
 </app-layout-template>

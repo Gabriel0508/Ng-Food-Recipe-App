@@ -41,13 +41,6 @@ export class SearchHeaderComponent implements OnInit {
   }
 
   /**
-   * Method to navigate
-   */
-  navigateTo(url: string): void {
-    this.router.navigateByUrl(url);
-  }
-
-  /**
    * Method to init the recipe form
    */
   private onInitRecipeForm() {

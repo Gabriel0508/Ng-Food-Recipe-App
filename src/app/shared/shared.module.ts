@@ -10,10 +10,11 @@ import { SearchHeaderComponent } from './search-header/search-header.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FavoriteModalComponent } from './favorite-modal/favorite-modal.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [HeaderComponent, HeroAreaComponent, TrendingComponent, BlogAreaComponent, SearchHeaderComponent, FavoriteModalComponent],
-  imports: [CommonModule, ComponentsModule, ReactiveFormsModule, FontAwesomeModule, BrowserAnimationsModule],
+  imports: [CommonModule, ComponentsModule, ReactiveFormsModule, FontAwesomeModule, BrowserAnimationsModule, RouterModule],
   exports: [HeaderComponent,HeroAreaComponent,TrendingComponent, BlogAreaComponent, SearchHeaderComponent, FavoriteModalComponent],
 })
 export class SharedModule {}
