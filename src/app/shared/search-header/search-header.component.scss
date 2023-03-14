@@ -6,7 +6,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 100%;
+    width: 95%;
     height: 180px;
     margin: 0 auto;
 
@@ -22,6 +22,7 @@ nav {
         font-size: 45px;
         font-weight: 100;
         color: black;
+        cursor: pointer;
       }
 
       form {
@@ -64,7 +65,7 @@ nav {
           font-size: 20px;
           color: #2f2f2f;
           cursor: pointer;
-          margin-right: 20px;
+          margin-right: 50px;
           &:hover {
             color: #ca3c0a;
           }
@@ -88,6 +89,7 @@ nav {
         text-decoration: none;
         color: black;
         margin-right: 20px;
+        cursor: pointer;
         &:hover {
           color: #ca3c0a;
         }

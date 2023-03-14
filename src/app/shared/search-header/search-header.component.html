@@ -1,33 +1,31 @@
-<app-layout-template>
-  <nav>
-    <div class="nav-container">
-      <div class="search-header">
-        <div>
-          <a href="/" class="brand">CuisineCrafter</a>
-        </div>
-        <form [formGroup]="recipeSearchForm" (ngSubmit)="onSubmit()">
-          <div class="icon-search" type="submit">
-            <fa-icon [icon]="faSearch"></fa-icon>
-          </div>
-          <input class="recipe-search" type="text" formControlName="recipe" />
-          <div class="icon-list"><fa-icon [icon]="faList"></fa-icon></div>
-        </form>
-        <div class="recipes-saved">
-          <span class="favorites" (click)="onShowModal()">
-            <fa-icon [icon]="faHeart"></fa-icon>
-            Favorites
-          </span>
-          <span class="cart">
-            <fa-icon [icon]="faCartShopping"></fa-icon>
-            Cart
-          </span>
-        </div>
+<nav>
+  <div class="nav-container">
+    <div class="search-header">
+      <div>
+        <a routerLink="/" class="brand">CuisineCrafter</a>
       </div>
-      <ul class="links-header">
-        <li><a href="/" class="link-item">Home</a></li>
-        <li><a href="/instructions" class="link-item">Categories</a></li>
-        <li><a href="/recipes" class="link-item">Recipes</a></li>
-      </ul>
+      <form [formGroup]="recipeSearchForm" (ngSubmit)="onSubmit()">
+        <div class="icon-search" type="submit">
+          <fa-icon [icon]="faSearch"></fa-icon>
+        </div>
+        <input class="recipe-search" type="text" formControlName="recipe" />
+        <div class="icon-list"><fa-icon [icon]="faList"></fa-icon></div>
+      </form>
+      <div class="recipes-saved">
+        <span class="favorites" (click)="onShowModal()">
+          <fa-icon [icon]="faHeart"></fa-icon>
+          Favorites
+        </span>
+        <span class="cart">
+          <fa-icon [icon]="faCartShopping"></fa-icon>
+          Cart
+        </span>
+      </div>
     </div>
-  </nav>
-</app-layout-template>
+    <ul class="links-header">
+      <li><a routerLink="/" class="link-item">Home</a></li>
+      <li><a routerLink="/instructions" class="link-item">Categories</a></li>
+      <li><a routerLink="/recipes" class="link-item">Recipes</a></li>
+    </ul>
+  </div>
+</nav>

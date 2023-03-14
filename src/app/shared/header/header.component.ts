@@ -11,17 +11,10 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {}
 
-  /**
-   * Method to navigate to register form
+   /**
+   * Method to navigate
    */
-  navigateToRegister() {
-    this.router.navigateByUrl('/register')
-  }
-
-  /**
-   * Method to navigate to the login form
-   */
-  navigateToLogin() {
-    this.router.navigateByUrl('/login');
+  navigateTo(url: string): void {
+    this.router.navigateByUrl(url);
   }
 }

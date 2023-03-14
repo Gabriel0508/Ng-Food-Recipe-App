@@ -1,0 +1,179 @@
+<main class="filter-container">
+  <div class="row">
+    <div class="col-3">
+      <h1 class="header">Filter recipies</h1>
+
+      <div class="season">
+        <p class="title-season">Season:</p>
+        <label class="checkbox">
+          <input type="checkbox" />
+          <span>Autum ({{ autumNum }})</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" checked />
+          <span>Spring ({{ springNum }})</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" />
+          <span>Summer ({{ summerNum }})</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" />
+          <span>Winter ({{ winterNum }})</span>
+        </label>
+      </div>
+
+      <div class="nutritional">
+        <p class="title">Nutritional:</p>
+        <label class="checkbox">
+          <input type="checkbox" />
+          <span>Low-carb ({{ autumNum }})</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" />
+          <span>Low-calorie ({{ autumNum }})</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" />
+          <span>High-protein ({{ autumNum }})</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" />
+          <span>Gluten-free ({{ autumNum }})</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" />
+          <span>Vegan ({{ autumNum }})</span>
+        </label>
+      </div>
+
+      <div class="meal">
+        <p class="title">Meal:</p>
+        <label class="checkbox">
+          <input type="checkbox" />
+          <span>Breakfast ({{ autumNum }})</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" />
+          <span>Lunch ({{ autumNum }})</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" />
+          <span>Dinner ({{ autumNum }})</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" />
+          <span>Dessert ({{ autumNum }})</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" />
+          <span>Snacks and Appetizers ({{ autumNum }})</span>
+        </label>
+      </div>
+
+      <div class="skill-level">
+        <p class="title">Skill level:</p>
+        <label class="checkbox">
+          <input type="checkbox" />
+          <span>Begginer ({{ autumNum }})</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" />
+          <span>Intermediar ({{ autumNum }})</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" />
+          <span>Master ({{ autumNum }})</span>
+        </label>
+      </div>
+
+      <div class="taste">
+        <p class="title">Taste preference:</p>
+        <label class="checkbox">
+          <input type="checkbox" />
+          <span>Spicy ({{ autumNum }})</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" />
+          <span>Sweet ({{ autumNum }})</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" />
+          <span>Savory ({{ autumNum }})</span>
+        </label>
+      </div>
+
+      <div class="time">
+        <p class="title">Time:</p>
+        <label class="checkbox">
+          <input type="checkbox" />
+          <span>Quick 10-30 min ({{ autumNum }})</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" />
+          <span>Long 30-60 min ({{ autumNum }})</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" />
+          <span>Longer 60-240 min ({{ autumNum }})</span>
+        </label>
+      </div>
+
+      <div class="allergens">
+        <p class="title">Allergens:</p>
+        <label class="checkbox">
+          <input type="checkbox" />
+          <span>Peanuts</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" />
+          <span>Tree nuts</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" />
+          <span>Milk and Dairy</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" />
+          <span>Lactose</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" />
+          <span>Eggs</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" />
+          <span>Wheat</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" />
+          <span>Fish</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" />
+          <span>Soybeans</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" />
+          <span>Shellfush</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" />
+          <span>Sesame</span>
+        </label>
+      </div>
+    </div>
+    <div class="col-8">
+      <div class="container">
+        <app-recipe-card
+          *ngFor="let recipe of filteredRecipes"
+          [title]="recipe.title"
+          [recipeImage]="recipe.recipeImage"
+          [ease]="recipe.ease"
+          [time]="recipe.time"
+        >
+        </app-recipe-card>
+      </div>
+    </div>
+  </div>
+</main>
