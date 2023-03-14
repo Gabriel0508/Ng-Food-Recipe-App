@@ -1,5 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { faList } from '@fortawesome/free-solid-svg-icons';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
@@ -19,7 +20,7 @@ export class SearchHeaderComponent implements OnInit {
 
   @Output() openModal = new EventEmitter<boolean>();
 
-  constructor(private fb: FormBuilder) {}
+  constructor(private fb: FormBuilder, private router: Router) {}
 
   ngOnInit(): void {
     this.onInitRecipeForm();
@@ -36,7 +37,14 @@ export class SearchHeaderComponent implements OnInit {
    * Method to submit the form
    */
   onSubmit() {
-    console.log("SUCCESS");
+    console.log('SUCCESS');
+  }
+
+  /**
+   * Method to navigate
+   */
+  navigateTo(url: string): void {
+    this.router.navigateByUrl(url);
   }
 
   /**

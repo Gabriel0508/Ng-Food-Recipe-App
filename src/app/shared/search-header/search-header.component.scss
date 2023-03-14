@@ -22,6 +22,7 @@ nav {
         font-size: 45px;
         font-weight: 100;
         color: black;
+        cursor: pointer;
       }
 
       form {
@@ -88,6 +89,7 @@ nav {
         text-decoration: none;
         color: black;
         margin-right: 20px;
+        cursor: pointer;
         &:hover {
           color: #ca3c0a;
         }
