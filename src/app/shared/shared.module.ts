@@ -12,6 +12,7 @@ import { FavoriteModalComponent } from './favorite-modal/favorite-modal.componen
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { FooterComponent } from './footer/footer.component';
+import { NewsletterComponent } from './newsletter/newsletter.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { FooterComponent } from './footer/footer.component';
     BlogAreaComponent,
     SearchHeaderComponent,
     FavoriteModalComponent,
+    NewsletterComponent,
     FooterComponent
   ],
   imports: [
@@ -38,6 +40,7 @@ import { FooterComponent } from './footer/footer.component';
     BlogAreaComponent,
     SearchHeaderComponent,
     FavoriteModalComponent,
+    NewsletterComponent,
     FooterComponent
   ],
 })
