@@ -2,8 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LandingComponent } from './landing/landing.component';
 import { SharedModule } from 'src/app/shared/shared.module';
-
-
+import { NewsletterModule } from '../newsletter/newsletter.module';
 
 @NgModule({
   declarations: [
@@ -11,7 +10,8 @@ import { SharedModule } from 'src/app/shared/shared.module';
   ],
   imports: [
     CommonModule,
-    SharedModule
+    SharedModule,
+    NewsletterModule
   ],
   exports: [
     LandingComponent

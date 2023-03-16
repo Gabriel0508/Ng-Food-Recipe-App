@@ -11,10 +11,34 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FavoriteModalComponent } from './favorite-modal/favorite-modal.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
-  declarations: [HeaderComponent, HeroAreaComponent, TrendingComponent, BlogAreaComponent, SearchHeaderComponent, FavoriteModalComponent],
-  imports: [CommonModule, ComponentsModule, ReactiveFormsModule, FontAwesomeModule, BrowserAnimationsModule, RouterModule],
-  exports: [HeaderComponent,HeroAreaComponent,TrendingComponent, BlogAreaComponent, SearchHeaderComponent, FavoriteModalComponent],
+  declarations: [
+    HeaderComponent,
+    HeroAreaComponent,
+    TrendingComponent,
+    BlogAreaComponent,
+    SearchHeaderComponent,
+    FavoriteModalComponent,
+    FooterComponent
+  ],
+  imports: [
+    CommonModule,
+    ComponentsModule,
+    ReactiveFormsModule,
+    FontAwesomeModule,
+    BrowserAnimationsModule,
+    RouterModule,
+  ],
+  exports: [
+    HeaderComponent,
+    HeroAreaComponent,
+    TrendingComponent,
+    BlogAreaComponent,
+    SearchHeaderComponent,
+    FavoriteModalComponent,
+    FooterComponent
+  ],
 })
 export class SharedModule {}

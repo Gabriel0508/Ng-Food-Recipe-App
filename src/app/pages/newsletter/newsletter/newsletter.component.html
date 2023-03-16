@@ -1,0 +1,43 @@
+<app-layout-template>
+  <div class="newsletter-container">
+    <div class="text">
+      <p class="title">Newsletter</p>
+      <p class="description">
+        Join our newsletter to recive weekly emails <br />
+        with the most loved recipes.
+      </p>
+    </div>
+
+    <form [formGroup]="newsletterForm" (ngSubmit)="onSubmit()" class="newsletter">
+      <div class="email">
+        <input
+          class="newsletter-input"
+          type="text"
+          formControlName="email"
+          placeholder="example@gmail.com"
+        />
+        <span
+          *ngIf="(newsletterForm.controls['email'].touched || newsletterForm.controls['email'].dirty) && newsletterForm.controls['email'].errors?.['required']"
+          class="err-message"
+        >
+          Email required
+        </span>
+
+        <span
+          *ngIf="(newsletterForm.controls['email'].touched || newsletterForm.controls['email'].dirty) && newsletterForm.controls['email'].errors?.['email']"
+          class="err-message"
+        >
+          Enter a valid email address
+        </span>
+      </div>
+      <div class="btn">
+        <button
+          type="submit"
+          class="btn-primary"
+          [disabled]="newsletterForm.invalid || newsletterForm.pristine">
+          Subscribe
+        </button>
+      </div>
+    </form>
+  </div>
+</app-layout-template>
