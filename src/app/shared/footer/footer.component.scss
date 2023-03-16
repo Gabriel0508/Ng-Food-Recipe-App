@@ -32,7 +32,12 @@
         }
       }
       .link {
+        display: flex;
+        align-items: center;
         margin: 10px 0;
+        .icon {
+          width: 20%;
+        }
         .link-item {
           text-decoration: none;
           font-family: "Open Sans";
@@ -41,6 +46,7 @@
           font-weight: 400;
           color: #1e1e1e;
           cursor: pointer;
+          align-self: flex-start;
           &:hover {
             color: #ca3c0a;
           }
