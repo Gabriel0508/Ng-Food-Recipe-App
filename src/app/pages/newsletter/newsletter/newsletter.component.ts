@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {
   FormBuilder,
-  FormControl,
   FormGroup,
   Validators,
 } from '@angular/forms';
@@ -13,6 +12,16 @@ import {
 })
 export class NewsletterComponent implements OnInit {
   newsletterForm: FormGroup = new FormGroup({});
+  errorMessages: any = {
+    emailMessages: '',
+  };
+
+  validationMessages: any = {
+    emailMessages: {
+      required: 'Email is required',
+      email: 'This should be a valid email',
+    },
+  };
 
   constructor(private fb: FormBuilder) {}
 
@@ -39,5 +48,21 @@ export class NewsletterComponent implements OnInit {
     this.newsletterForm = this.fb.group({
       email: ['', [Validators.required, Validators.email]],
     });
+    const email = this.newsletterForm.get('email');
+
+    email?.valueChanges.subscribe((value) =>
+      this.setMessage(email, 'emailMessages')
+    );
+  }
+
+  public setMessage(field: any, messageIdentifier: string): void {
+    this.errorMessages[messageIdentifier] = '';
+    if ((field.touched || field.dirty) && field.errors) {
+      this.errorMessages[messageIdentifier] = Object.keys(field.errors)
+        .map((key) => {
+          return this.validationMessages[messageIdentifier][key];
+        })
+        .join(' ');
+    }
   }
 }

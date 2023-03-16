@@ -8,7 +8,11 @@
       </p>
     </div>
 
-    <form [formGroup]="newsletterForm" (ngSubmit)="onSubmit()" class="newsletter">
+    <form
+      [formGroup]="newsletterForm"
+      (ngSubmit)="onSubmit()"
+      class="newsletter"
+    >
       <div class="email">
         <input
           class="newsletter-input"
@@ -16,28 +20,22 @@
           formControlName="email"
           placeholder="example@gmail.com"
         />
-        <span
-          *ngIf="(newsletterForm.controls['email'].touched || newsletterForm.controls['email'].dirty) && newsletterForm.controls['email'].errors?.['required']"
-          class="err-message"
-        >
-          Email required
-        </span>
-
-        <span
-          *ngIf="(newsletterForm.controls['email'].touched || newsletterForm.controls['email'].dirty) && newsletterForm.controls['email'].errors?.['email']"
-          class="err-message"
-        >
-          Enter a valid email address
+        <span class="err-message" *ngIf="errorMessages.emailMessages">
+          {{ errorMessages.emailMessages }}
         </span>
       </div>
       <div class="btn">
         <span class="icon">
-          <img src="/assets/background/undraw_newsletter_re_wrob 1.svg" alt="newsletter">
+          <img
+            src="/assets/background/undraw_newsletter_re_wrob 1.svg"
+            alt="newsletter"
+          />
         </span>
         <button
           type="submit"
           class="btn-primary"
-          [disabled]="newsletterForm.invalid || newsletterForm.pristine">
+          [disabled]="newsletterForm.invalid || newsletterForm.pristine"
+        >
           Subscribe
         </button>
       </div>
