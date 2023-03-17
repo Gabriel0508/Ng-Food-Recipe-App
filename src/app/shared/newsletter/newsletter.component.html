@@ -1,0 +1,44 @@
+<app-layout-template>
+  <div class="newsletter-container">
+    <div class="text">
+      <p class="title">Newsletter</p>
+      <p class="description">
+        Join our newsletter to recive weekly emails <br />
+        with the most loved recipes.
+      </p>
+    </div>
+
+    <form
+      [formGroup]="newsletterForm"
+      (ngSubmit)="onSubmit()"
+      class="newsletter"
+    >
+      <div class="email">
+        <input
+          class="newsletter-input"
+          type="text"
+          formControlName="email"
+          placeholder="example@gmail.com"
+        />
+        <span class="err-message" *ngIf="errorMessages.emailMessages">
+          {{ errorMessages.emailMessages }}
+        </span>
+      </div>
+      <div class="btn">
+        <span class="icon">
+          <img
+            src="/assets/background/undraw_newsletter_re_wrob 1.svg"
+            alt="newsletter"
+          />
+        </span>
+        <button
+          type="submit"
+          class="btn-primary"
+          [disabled]="newsletterForm.invalid || newsletterForm.pristine"
+        >
+          Subscribe
+        </button>
+      </div>
+    </form>
+  </div>
+</app-layout-template>

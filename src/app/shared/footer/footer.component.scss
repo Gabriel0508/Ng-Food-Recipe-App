@@ -1,0 +1,57 @@
+.footer-container {
+  width: 100%;
+  height: auto;
+  padding: 15px 0;
+  background: url(/assets/background/blogbg.png);
+  .nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    .create,
+    .follow,
+    .support {
+      .title {
+        position: relative;
+        font-family: Open-Sans;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        color: #2f2f2f;
+        text-transform: uppercase;
+        margin: 30px 0;
+
+        &:before {
+          content: "";
+          display: block;
+          width: 41px;
+          height: 3px;
+          background: #1d741b;
+          position: absolute;
+          bottom: 0;
+          border-radius: 2px;
+        }
+      }
+      .link {
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+        .icon {
+          width: 20%;
+        }
+        .link-item {
+          text-decoration: none;
+          font-family: Open-Sans;
+          font-style: normal;
+          font-size: 28px;
+          font-weight: 400;
+          color: #1e1e1e;
+          cursor: pointer;
+          align-self: flex-start;
+          &:hover {
+            color: #ca3c0a;
+          }
+        }
+      }
+    }
+  }
+}
